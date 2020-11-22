@@ -14,7 +14,7 @@ def howCloseisIt(appro,n:float):
     n = np.float128(n)
     appro = np.float128(appro)
     actVal = np.log(n)
-    return(actVal - appro)
+    return(np.subtract(actVal,appro))
 while True:
     n = float(input("Enter x value for ln(x)"))
     r = int(input("Enter n value for Sigma"))
